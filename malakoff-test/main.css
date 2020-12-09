@@ -46,7 +46,7 @@ video {
     background: rgba(0,0,0,0.3);
     color: white;
     padding: 2rem;
-    width: 40%;
+    width: 35%;
     margin:2rem;
     float: left;
     font-size: 1.2rem;
@@ -72,9 +72,13 @@ h3 {
     font-family: DMSans;
     color: white;
     margin-top: 3.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    letter-spacing: .1rem;
 }
 
+h4 {
+    font-family: DMSans;
+}
 p {
     font-family: DMSans;
 }
@@ -223,6 +227,7 @@ button {
 
   .header-right a {
     color: white;
+    margin-right: 2rem;
   }
 
   @media screen and (max-width: 500px) {
@@ -237,7 +242,7 @@ button {
       }
 }
 @media screen and (max-device-width: 800px) {
-    html { background: url(benbg.png) #000 no-repeat center center fixed; }
+    html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
     #bgvid { display: none; }
 }
 
@@ -248,6 +253,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #myImg:hover {opacity: 0.7;}
@@ -269,7 +278,7 @@ button {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.95); /* Black w/ opacity */
   }
 
   /* Modal Content (Image) */
