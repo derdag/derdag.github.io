@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="script.js"></script> -->
+    <script>
+        window.onload = function () {
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <video id="bgvid" playsinline autoplay muted loop>
+        <!--- Video needs to be muted, since Chrome 66+ will not autoplay video with sound. WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="BenMMJreel.mp4" type="video/mp4">
+
+    </video>
+
+    <div id="main">
+
+        <div class="header">
+            <div class="header-left">
+                <a href="#default" class="logo">Ben Malakoff</a>
+                <h3>Multimedia Journalist & Sports Reporter</h3>
+            </div>
+
+            <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href="https://commonwealthtimes.org/tag/ben-malakoff/" target="_blank">Articles</a>
+                <a href="#default">Resume</a>
+                <a href="#default">Contact</a>
+            </div>
+
+        </div>
+
+        <!-- <div class="middle-row">
+            <img src="media/play_circle_outline.png" alt="">
+        </div> -->
+
+        <img id="myImg" src="media/play_circle_outline.png" alt="play-btn">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <!-- <img class="modal-content" id="img01"> -->
+            <div class="model-content" id="img01">
+                <iframe class="model-content" width="410" height="300"
+                    src="https://www.youtube.com/embed/VkBQHLREJIg"></iframe>
+                <iframe class="model-content" width="410" height="300"
+                    src="https://www.youtube.com/embed/VkBQHLREJIg"></iframe>
+                <!-- <p style="color:white;">HELLOO</p> -->
+                <!-- <video src="BenMMJReel.mp4"></video> -->
+            </div>
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+
+
+
+        <div id="polina">
+            <!-- <h1>Hello! I'm Ben Malakoff,</h1> -->
+            <!-- <h3>Multimedia Journalist & Sports Reporter</h3> -->
+            <p>I'm a senior studying broadcast journalism at <a href="https://www.vcu.edu/" target="_blank">VCU</a> and
+                am the General
+                Manager of <a href="https://wvcw.org/" target="_blank">WVCW</a> - the student-run radio station. I’ve
+                spent time as a
+                sports intern at <a href="https://wjla.com/" target="_blank">WJLA ABC-7</a>, shadowing the sports team,
+                and was the
+                sports director and a play-by-play commentator at WVCW. </p>
+        </div>
+
+        <div id="footer">
+
+            <div class="footer-left">
+                <p>Copyright © 2020 Benjamin Malakoff. All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-right">
+                <p>email@benmalakoff.media</p>
+                <p>(703) 862-3536</p>
+                <p class="note">*background footage is clipped from reels.</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="https://twitter.com/RealBenMalakoff" target="_blank"><img src="twitter.png"
+                        alt="twitter-profile-link"></a>
+                <a href="https://www.facebook.com/benjamin.malakoff" target="_blank"><img src="facebook.png"
+                        alt="facebook-profile-link"></a>
+                <a href="https://www.linkedin.com/in/benmalakoff1/" target="_blank"><img src="linkedin.png"
+                        alt="linkedin-profile-link"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- <img id="overlay" src="ovals.png" alt="overlay"> -->
+
+    <!-- <div id="twitter">
+        <a class="twitter-timeline" data-width="280" data-height="600" data-theme="light"
+            href="https://twitter.com/wvcw?ref_src=twsrc%5Etfw">Tweets by wvcw</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div> -->
+
+
+
+</body>
+
+</html>
