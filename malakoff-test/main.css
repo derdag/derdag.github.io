@@ -244,7 +244,7 @@ color: white;
     }
 }
 @media screen and (max-device-width: 800px) {
-    html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+    /* html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; } */
     #bgvid { display: none; }
 }
 
