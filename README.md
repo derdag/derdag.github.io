@@ -1,3 +1,3 @@
 # derdag.github.io
 
-This is the site hosted at https://www.denizerdag.com.
+This is the site hosted at https://denizerdag.com/.
